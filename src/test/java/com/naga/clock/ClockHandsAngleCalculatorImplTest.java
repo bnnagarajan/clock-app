@@ -49,5 +49,4 @@ public class ClockHandsAngleCalculatorImplTest {
 	    Assert.assertEquals("Angle for 09:45 must be 22.5", 22.5f, clockHandsAngleCalculator.getAngle(9, 45), 0.0f);
 	    
 	}
-
 }
