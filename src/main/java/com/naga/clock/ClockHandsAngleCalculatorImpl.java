@@ -7,14 +7,13 @@ package com.naga.clock;
  *
  */
 public class ClockHandsAngleCalculatorImpl implements ClockHandsAngleCalculator {
-
+    	private final int eachMinAngle = 360/60;
+    	private final int eachHrAngle = 360/12;
+	
 	/* (non-Javadoc)
 	 * @see com.naga.clock.ClockHandsAngleCalculator#getAngle(int, int)
 	 */
-	public float getAngle(int hour, int minute) {
-		int eachMinAngle = 360/60;
-	    int eachHrAngle = 360/12;
-	    
+	public float getAngle(int hour, int minute) {	    
 	    // Make hour angle as 0 if the hour is 12
 	    int hourAngle = (hour != 12) ? hour * eachHrAngle : 0;
 	    int minAngle = minute * eachMinAngle;
